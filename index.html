@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiservicios Infotec</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR: Navegación -->
+            <nav class="nav-simple" id="navbar" aria-label="Navegación principal">
+                <button class="hamburger" id="hamburger" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+                </ul>
+            </nav>
+
+    <!-- HEADER INICIO -->
+    <header class="header-inicio">
+        <div class="header-decoration header-decoration-top"></div>
+        <div class="header-decoration header-decoration-bottom"></div>
+        <div class="header-hero">
+            <!-- BARRA SUPERIOR: Logo + Título/Subtítulo + CTA -->
+            <div class="header-top-bar">
+                <div class="logo-brand">
+                    <img src="img/logo.png" alt="Infotec" class="logo-grande">
+                </div>
+                
+                <!-- CENTRO: Título y Subtítulo -->
+                <div class="header-center">
+                    <h1 class="titulo-principal">Multiservicios Infotec</h1>
+                    <p class="subtitulo">Soluciones Tecnológicas de Calidad</p>
+                </div>
+                
+                <div class="header-cta">
+                    <a href="https://wa.me/51900261118?text=Hola,%20necesito%20información" 
+                       class="btn-header-cta" title="Contactar por WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Contáctanos
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+   <!-- SECCIÓN PRODUCTOS DESTACADOS -->
+<section class="products-section" id="inicio">
+    <h2 class="section-title">Las mejores ofertas </h2>
+
+    <div class="carousel-wrapper">
+        
+        <!-- Botón Anterior -->
+        <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <!-- Contenedor del carrusel -->
+        <div class="carousel-container">
+            <div class="carousel-track">
+
+                <div class="carousel-slide">
+                    <img src="img/baners/1.svg" alt="Laptops Premium">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="img/baners/2.svg" alt="Impresoras">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="img/baners/3.svg" alt="Monitores">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="img/baners/4.svg" alt="Computadoras">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="img/baners/5.svg" alt="Accesorios">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Botón Siguiente -->
+        <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Siguiente">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+    <!-- Indicadores -->
+    <div class="carousel-dots" id="carouselDots"></div>
+
+    <!-- Botón Ver Todos -->
+    <div class="products-cta">
+        <a href="productos.html" class="btn-primary">
+            VER TODOS LOS PRODUCTOS
+        </a>
+    </div>
+</section>
+
+    <!-- SECCIÓN VENTAJAS -->
+    <section class="advantages">
+        <h2 class="section-title">¿Por Qué Elegirnos?</h2>
+        <div class="advantages-content">
+            <div class="advantage-item">
+                <div class="advantage-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Calidad Garantizada</h3>
+                <p>Productos originales con certificación de fábrica y garantía oficial</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>Entrega Rápida</h3>
+                <p>Entregas a domicilio en toda la ciudad de Chiclayo en 24-48 horas</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Cobertura Total</h3>
+                <p>Garantía completa por defectos de fábrica y servicio técnico disponible</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN NOSOTROS + CONTACTO COMBINADA -->
+    <section class="about-contact-section" id="nosotros">
+        <div class="about-contact-wrapper">
+            <!-- SOBRE NOSOTROS -->
+            <div class="about-us-content">
+                <div class="about-header">
+                    <div class="about-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h2>Sobre Nosotros</h2>
+                </div>
+                
+                <div class="about-body">
+                    <div class="about-intro">
+                        <p class="about-years">
+                            <span class="year-number">14</span>
+                            <span class="year-label">Años de Experiencia</span>
+                        </p>
+                    </div>
+
+                    <p class="about-text">
+                        <strong>Infotec</strong> es una empresa líder en la venta de equipos tecnológicos y prestación de servicios técnicos especializados en Chiclayo.
+                    </p>
+
+                    <p class="about-text">
+                        Durante más de una década, hemos trabajado con <strong>compromiso y responsabilidad</strong>, brindando soluciones tecnológicas confiables a miles de clientes satisfechos.
+                    </p>
+
+                    <div class="about-mission">
+                        <div class="mission-item">
+                            <h4><i class="fas fa-check"></i> Nuestra Misión</h4>
+                            <p>Ofrecer equipos tecnológicos de calidad premium con garantía oficial y servicio técnico disponible.</p>
+                        </div>
+                        <div class="mission-item">
+                            <h4><i class="fas fa-check"></i> Nuestro Compromiso</h4>
+                            <p>Ser oportuno, transparente y confiable, buscando siempre la satisfacción del cliente y la mejora continua.</p>
+                        </div>
+                    </div>
+
+                    <p class="about-closing">
+                        Contamos con un equipo especializado listo para asesorarte en cada paso de tu compra y brindarte el mejor servicio técnico.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CONTACTO -->
+            <div class="contact-us-content" id="contacto">
+                <div class="contact-header">
+                    <div class="contact-header-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h2>Contáctanos</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <strong>Ubicación</strong>
+                            <p>Av. Los Mangos 1091, Villa Hermosa - Chiclayo</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <strong>Teléfono</strong>
+                            <p>+51 923 213 425<br>+51 900 261 118</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <strong>Email</strong>
+                            <p>multiserviciosinfotec08@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <strong>Horario</strong>
+                            <p>Lunes a Sábado: 9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="asunto" placeholder="Asunto de tu consulta" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensaje" placeholder="Cuéntanos tu consulta..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Multiservicios Infotec</h4>
+                <p>Tienda oficial de venta de productos tecnológicos de calidad premium con garantía y servicio profesional.</p>
+                <div class="social-links">
+                    <a href="https://web.facebook.com/infotec.ph08/?_rdc=1&_rdr#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/infotec_cix" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@infotec_cix" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <p><a href="productos.html" style="color: #ddd; text-decoration: none;">Catálogo de Productos</a></p>
+                <p><a href="#contacto" style="color: #ddd; text-decoration: none;">Contacto</a></p>
+                <p><a href="#" style="color: #ddd; text-decoration: none;">Términos y Condiciones</a></p>
+                <p><a href="#" style="color: #ddd; text-decoration: none;">Política de Privacidad</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Dirección</h4>
+                <p>Av. Los mangos 1091, Villa Hermosa - Chiclayo<br>Lambayeque, Perú</p>
+                <p>📞 +51 923 213 425 <br>📧 multiserviciosinfotec08@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Multiservicios Infotec. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/51900261118?text=Hola,%20necesito%20más%20información%20sobre%20sus%20productos" 
+       class="whatsapp-float" target="_blank" title="Chatear en WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/hamburger.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("e1sOaHHCwxHKb3lMS");
+})();
+
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_infotec", "template_infotec", this)
+        .then(function() {
+            alert("Mensaje enviado correctamente ✅");
+            document.querySelector(".contact-form").reset();
+        }, function(error) {
+            alert("Error al enviar ❌");
+            console.log(error);
+        });
+});
+</script>
+
+</body>
+
+</html>

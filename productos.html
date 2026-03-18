@@ -1,0 +1,3015 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - Multiservicios Infotec</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
+</head>
+
+<body>
+    <!-- HEADER CATALOGO -->
+    <header class="header-catalogo">
+        <div class="header-top">
+            <div class="header-left">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Infotec" class="header-logo">
+                    <span class="brand-name">Infotec</span>
+                </a>
+            </div>
+
+            <div class="header-center">
+                <h2 class="catalog-title">PRODUCTOS</h2>
+            </div>
+
+            <div class="header-right">
+                <a href="#" class="header-link">
+                    <i class="fas fa-phone"> </i>
+                    <span> 923 213 425  <br>  900 261 118</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                 <li><a href="productos.html" class="active">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN PRODUCTOS -->
+    <section class="products-section">
+        <div class="catalog-container">
+            <!-- BARRA DE BÚSQUEDA MEJORADA -->
+            <div class="search-container">
+                <div class="search-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607Z" />
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="¿Qué estás buscando?" autocomplete="off">
+                </div>
+            </div>
+
+            <!-- FILTROS POR CATEGORÍA - DISEÑO HORIZONTAL -->
+            <div class="categories-section">
+                <div class="categories-section-content">
+                    <div class="categories-container">
+                        <button class="category-btn" data-filter="all">
+                            <i class="fas fa-th"></i>
+                            <span>Todas</span>
+                        </button>
+                        <button class="category-btn" data-filter="laptops">
+                            <i class="fas fa-laptop"></i>
+                            <span>Laptops</span>
+                        </button>
+                        <button class="category-btn" data-filter="impresoras">
+                            <i class="fas fa-print"></i>
+                            <span>Impresoras</span>
+                        </button>
+                        <button class="category-btn" data-filter="monitores">
+                            <i class="fas fa-desktop"></i>
+                            <span>Monitores</span>
+                        </button>
+                        <button class="category-btn" data-filter="computadoras">
+                            <i class="fas fa-server"></i>
+                            <span>Computadoras</span>
+                        </button>
+                        <button class="category-btn" data-filter="suministros">
+                            <i class="fas fa-droplet"></i>
+                            <span>Suministros</span>
+                        </button>
+                        <button class="category-btn" data-filter="accesorios">
+                            <i class="fas fa-plug"></i>
+                            <span>Accesorios</span>
+                        </button>
+                        <button class="category-btn" data-filter="respuestos">
+                            <i class="fas fa-microchip"></i>
+                            <span>Respuestos</span>
+                        </button>
+                        <button class="category-btn" data-filter="cpu">
+                            <i class="fas fa-cog"></i>
+                            <span>CPU</span>
+                        </button>
+                        <button class="category-btn" data-filter="camaras">
+                            <i class="fas fa-camera"></i>
+                            <span>Cámaras</span>
+                        </button>
+                        <button class="category-btn" data-filter="refurbished">
+                            <i class="fas fa-recycle"></i>
+                            <span>Refurbished</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN REFURBISHED ESPECIAL -->
+             <div id="refurbishedSection" class="refurbished-section">
+                 <h2 class="refurbished-title">
+                     <i class="fas fa-recycle"></i> Productos Refurbished
+                 </h2>
+                 <p class="refurbished-subtitle">Equipos reacondicionados de calidad a precios especiales</p>
+                 
+                 <!-- Laptops Refurbished -->
+                 <div class="refurbished-category">
+                     <h3 class="refurbished-category-title">
+                         <i class="fas fa-laptop"></i> Laptops Refurbished
+                     </h3>
+                     <div class="refurbished-grid filled">
+
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="laptops" data-id="ref-lap-5"
+                         data-images="img/refurbished/laptopasus3.jpeg|img/refurbished/laptopasus4.jpeg|img/refurbished/laptopasus5.jpeg">
+                             <div class="product-header">
+                                 <img src="img/refurbished/laptopasus.jpeg" alt="Laptop HP Refurbished">
+                                 <div class="discount-badge">15%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand">ASUS</p>
+                                 <h3 class="product-name">Laptop Core I5</h3>
+                                 <p class="price">S/. 1300</p>
+                                 <p class="product-description">Laptop Asus reacondicionada core i5. Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-lap-5">Ver más detalles</button>
+                             </div>
+                         </div>
+
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="laptops" data-id="ref-lap-6">
+                             <div class="product-header">
+                                 <img src="img/refurbished/ASUSI5.webp" alt="Laptop HP Refurbished">
+                                 <div class="discount-badge">15%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand">ASUS</p>
+                                 <h3 class="product-name">Laptop Core I5</h3>
+                                 <p class="price">S/. 2500</p>
+                                 <p class="product-description">Laptop Asus reacondicionada core i5, 8GB RAM, 240GB SDD, RTX3050. Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-lap-6">Ver más detalles</button>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div>
+                 
+                 <!-- Impresoras Refurbished -->
+                 <div class="refurbished-category">
+                     <h3 class="refurbished-category-title">
+                         <i class="fas fa-print"></i> Impresoras Refurbished
+                     </h3>
+                     <div class="refurbished-grid filled">
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="Impresoras" data-id="ref-imp-1">
+                             <div class="product-header">
+                                 <img src="img/refurbished/impresoraepson.webp" alt="Laptop Lenovo Refurbished">
+                                 <div class="discount-badge">10%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand">EPSON</p>
+                                 <h3 class="product-name">Impresora</h3>
+                                 <p class="price"></p>
+                                 <p class="product-description">Impresora brother reacondicionada. Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-imp-1">Ver más detalles</button>
+                             </div>
+                         </div>
+
+
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="Impresoras" data-id="ref-imp-2">
+                             <div class="product-header">
+                                 <img src="img/refurbished/impresorabrother.webp" alt="Laptop Lenovo Refurbished">
+                                 <div class="discount-badge">10%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand">LBROTHER</p>
+                                 <h3 class="product-name">Impresora</h3>
+                                 <p class="price"></p>
+                                 <p class="product-description">Impresora brother reacondicionada. Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-imp-2">Ver más detalles</button>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div>
+                 
+                 <!-- Monitores Refurbished -->
+                 <div class="refurbished-category">
+                     <h3 class="refurbished-category-title">
+                         <i class="fas fa-desktop"></i> Monitores Refurbished
+                     </h3>
+                     <div class="refurbished-grid filled">
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="Monitores" data-id="ref-mon-1">
+                             <div class="product-header">
+                                 <img src="img/refurbished/monitor1.webp" alt="Laptop Lenovo Refurbished">
+                                 <div class="discount-badge">10%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand"></p>
+                                 <h3 class="product-name">MONITOR AIO LG 24 - REFURBISHED</h3>
+                                 <p class="price"></p>
+                                 <p class="product-description">MONITOR AIO LG 24 PULGADAS INTEL COREi3 DE DECIMA GENERACION 4GB. Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-mon-1">Ver más detalles</button>
+                             </div>
+                         </div>
+
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="Monitores" data-id="ref-mon-2">
+                             <div class="product-header">
+                                 <img src="img/refurbished/monitorsamsung1.webp" alt="Laptop Lenovo Refurbished">
+                                 <div class="discount-badge">10%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand">SAMSUNG </p>
+                                 <h3 class="product-name">MONITOR SAMSUNG - REFURBISHED </h3>
+                                 <p class="price">S/. 125</p>
+                                 <p class="product-description">MONITOR SAMSUNG DE 19 PULGADAS CON HDMI. Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-mon-2">Ver más detalles</button>
+                             </div>
+                         </div>
+
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="Monitores" data-id="ref-mon-3">
+                             <div class="product-header">
+                                 <img src="img/refurbished/monitorlg.webp" alt="Laptop Lenovo Refurbished">
+                                 <div class="discount-badge">10%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand">LG</p>
+                                 <h3 class="product-name">MONITOR LG - REFURBISHED</h3>
+                                 <p class="price">S/. 120</p>
+                                 <p class="product-description">MONITOR LG DE 19.5 PULGADAS. Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-mon-3">Ver más detalles</button>
+                             </div>
+                         </div>
+
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="Monitores" data-id="ref-mon-4">
+                             <div class="product-header">
+                                 <img src="img/refurbished/monitor3.webp" alt="Laptop Lenovo Refurbished">
+                                 <div class="discount-badge">10%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand">SAMSUNG</p>
+                                 <h3 class="product-name">MONITOR SAMSUMG-REFURBISHED</h3>
+                                 <p class="price">S/. 120</p>
+                                 <p class="product-description">MONITOR SAMSUNG 19 PULGADAS. Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-mon-4">Ver más detalles</button>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div>
+                 
+                 <!-- Computadoras Refurbished -->
+                 <div class="refurbished-category">
+                     <h3 class="refurbished-category-title">
+                         <i class="fas fa-server"></i> Computadoras Refurbished
+                     </h3>
+                     <div class="refurbished-grid filled">
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="Computadoras" data-id="ref-comp-1">
+                             <div class="product-header">
+                                 <img src="img/refurbished/Computadoracompleta.jfif" alt="Laptop Lenovo Refurbished">
+                                 <div class="discount-badge">10%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand">LG</p>
+                                 <h3 class="product-name">COMPUTADORA COMPLETA LG - REFURBISHED</h3>
+                                 <p class="price">S/. 250</p>
+                                 <p class="product-description">Computadora Completa (PANTALLA Y CPU). Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-comp-1">Ver más detalles</button>
+                             </div>
+                         </div>
+
+
+                         <div class="product-card" data-category="refurbished" data-refurbished-type="Computadoras" data-id="ref-comp-2">
+                             <div class="product-header">
+                                 <img src="img/refurbished/computadora2.jfif" alt="Laptop Lenovo Refurbished">
+                                 <div class="discount-badge">10%</div>
+                             </div>
+                             <div class="product-body">
+                                 <p class="store-info">Por tienda Infotec</p>
+                                 <p class="brand"> LG</p>
+                                 <h3 class="product-name">COMPUTADORA - REFURBISHED</h3>
+                                 <p class="price">S/. 550</p>
+                                 <p class="product-description">COMPUTADORA COMPLETA (PANTALLA + CPU +teclado i mouse ). Garantía 6 meses.</p>
+                                 <button class="buy-btn details-btn" data-id="ref-comp-2">Ver más detalles</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+             </div>
+
+             <!-- GRID DE PRODUCTOS CON CARRUSEL POR CATEGORÍA -->
+             <div class="products-grid">
+
+                <!-- ACCESORIOS -->
+                <div class="product-card" data-category="accesorios" data-id="1"
+                data-images="img/accesorios/audifonorojo.webp|img/accesorios/audifonoblanco.webp">
+                    <div class="product-header">
+                        <img src="img/accesorios/audifonoazul.webp" alt="Audifono Bluetooth">
+                        <div class="discount-badge">20%</div>
+                    </div>
+                    <div class="product-body">
+                        <p class="store-info">Por tienda Infotec</p>
+                        <p class="brand">WIRELESS</p>
+                        <h3 class="product-name">Audífono Bluetooth P47</h3>
+                        <p class="price"></p>
+                        <p class="product-description"> AUDIFONOS INALAMBRICOS DE DIVERSIDAD DE COLORES
+                            - Duración de bateria de 6 horas
+                            - Mayor alcance de conectividad
+                            - Compatible con las normas ROHS
+                        </p>
+                        <button class="buy-btn details-btn" data-id="1">Ver más detalles</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accesorios" data-id="2">
+                <div class="product-header">
+                    <img src="img/accesorios/Hub USB 2.0 Multipuerto.webp" alt="Hub USB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Hub USB 2.0 Multipuerto</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Hub USB 2.0 multipuerto con lector de tarjetas SD y Micro SD integrado.</p>
+                    <button class="buy-btn details-btn" data-id="2">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="3">
+                <div class="product-header">
+                    <img src="img/accesorios/Antena WiFi 1200 Mbps.webp" alt="Antena WiFi">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Antena WiFi 1200 Mbps</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Antena WiFi de alta velocidad 1200 Mbps para mejor conectividad.</p>
+                    <button class="buy-btn details-btn" data-id="3">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="4">
+                <div class="product-header">
+                    <img src="img/accesorios/Kit Limpieza 4 Piezas.webp" alt="Kit Limpieza">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Kit Limpieza 4 Piezas</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit de limpieza para equipos de 4 piezas.</p>
+                    <button class="buy-btn details-btn" data-id="4">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="5">
+                <div class="product-header">
+                    <img src="img/accesorios/Adaptador Bluetooth USB 5.0.jpg" alt="Adaptador Bluetooth">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Adaptador Bluetooth USB 5.0</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Adaptador Bluetooth USB 5.0 de alta velocidad.</p>
+                    <button class="buy-btn details-btn" data-id="5">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="6">
+                <div class="product-header">
+                    <img src="img/accesorios/Audífonos Tipo C.webp" alt="Audífonos Tipo C">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Audífonos Tipo C</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Audífonos con conexión USB Tipo C.</p>
+                    <button class="buy-btn details-btn" data-id="6">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="7">
+                <div class="product-header">
+                    <img src="img/accesorios/Adaptador USB 3.0 Alamrg45.webp" alt="Adaptador USB 3.0">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Adaptador USB 3.0 Alamrg45</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Adaptador USB 3.0 de alta velocidad.</p>
+                    <button class="buy-btn details-btn" data-id="7">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="8">
+                <div class="product-header">
+                    <img src="img/accesorios/Hub USB 2.0 4 Puertos.webp" alt="Hub USB 2.0 4 Puertos">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Hub USB 2.0 4 Puertos</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Hub USB 2.0 con 4 puertos.</p>
+                    <button class="buy-btn details-btn" data-id="8">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="9">
+                <div class="product-header">
+                    <img src="img/accesorios/Pila PC 2032.jpg" alt="Pila PC 2032">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Pila PC 2032 10 Unidades</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Pack de 10 pilas tipo moneda PC 2032.</p>
+                    <button class="buy-btn details-btn" data-id="9">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="10">
+                <div class="product-header">
+                    <img src="img/accesorios/Pasta Térmica Gerinja.jpg" alt="Pasta Térmica">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Pasta Térmica Gerinja Grande 5 UND</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Pasta térmica Gerinja en presentación grande x 5 unidades.</p>
+                    <button class="buy-btn details-btn" data-id="10">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="11">
+                <div class="product-header">
+                    <img src="img/accesorios/Conector de unión RJ45 para cables de red.webp" alt="Unión RJ45">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Unión RJ45</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Conector de unión RJ45 para cables de red.</p>
+                    <button class="buy-btn details-btn" data-id="11">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="12">
+                <div class="product-header">
+                    <img src="img/accesorios/Cable Entrada VGA Doble Filtro.jpg" alt="Cable VGA">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cable Entrada VGA Doble Filtro</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cable VGA de entrada con doble filtro.</p>
+                    <button class="buy-btn details-btn" data-id="12">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="13">
+                <div class="product-header">
+                    <img src="img/accesorios/Cable HDMI 1.5m Doble Filtro Full HD.webp" alt="Cable HDMI">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cable HDMI 1.5m Doble Filtro Full HD</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cable HDMI de 1.5 metros con doble filtro para transmisión Full HD.</p>
+                    <button class="buy-btn details-btn" data-id="13">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="14">
+                <div class="product-header">
+                    <img src="img/accesorios/Cable de entrada de poder.jpg" alt="Cable Power">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cable Entrada Power</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cable de entrada de poder estándar.</p>
+                    <button class="buy-btn details-btn" data-id="14">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="15">
+                <div class="product-header">
+                    <img src="img/accesorios/Cable Entrada Trébol Calidad Trillizo.jpg" alt="Cable Trébol">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cable Entrada Trébol Calidad Trillizo</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cable de entrada trébol de calidad trillizo.</p>
+                    <button class="buy-btn details-btn" data-id="15">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="16">
+                <div class="product-header">
+                    <img src="img/accesorios/Cable Entrada Tipo 8 Grueso.webp" alt="Cable Tipo 8">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cable Entrada Tipo 8 Grueso</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cable de entrada tipo 8 grueso y resistente.</p>
+                    <button class="buy-btn details-btn" data-id="16">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="17">
+                <div class="product-header">
+                    <img src="img/accesorios/Rack Enclosure 2.5 SATA USB 2.0.webp" alt="Rack Enclosure">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Rack Enclosure 2.5 SATA USB 2.0</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Rack enclosure para 2.5 SATA con conexión USB 2.0.</p>
+                    <button class="buy-btn details-btn" data-id="17">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="18">
+                <div class="product-header">
+                    <img src="img/accesorios/Skin 3D Para Laptop Hasta 15.6.jpg" alt="Skin 3D Laptop">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Skin 3D Para Laptop Hasta 15.6</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Protector de piel 3D para laptops hasta 15.6 pulgadas.</p>
+                    <button class="buy-btn details-btn" data-id="18">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="19">
+                <div class="product-header">
+                    <img src="img/accesorios/Protector Pantalla Laptop.jpg" alt="Protector Pantalla">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Protector Pantalla Laptop 15.6</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Protector de pantalla para laptop 15.6 pulgadas.</p>
+                    <button class="buy-btn details-btn" data-id="19">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="20">
+                <div class="product-header">
+                    <img src="img/accesorios/Protector Pantalla Laptop 14.jpg" alt="Protector Pantalla Laptop 14">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Protector Pantalla Laptop 14</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Protector de pantalla para laptop 14 pulgadas.</p>
+                    <button class="buy-btn details-btn" data-id="20">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="21">
+                <div class="product-header">
+                    <img src="img/accesorios/Adaptador USB Sonido 7.1 Con Regulador.webp" alt="Adaptador USB Sonido">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Adaptador USB Sonido 7.1 Con Regulador</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Adaptador USB de sonido 7.1 con regulador de volumen.</p>
+                    <button class="buy-btn details-btn" data-id="21">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="22">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Óptico Con Puerto USB.webp" alt="Mouse Óptico">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Óptico Con Puerto USB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse óptico con puerto USB.</p>
+                    <button class="buy-btn details-btn" data-id="22">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="23">
+                <div class="product-header">
+                    <img src="img/accesorios/Funda Laptop Cuerina 3D 15.6 Doble Acolchado.jpg" alt="Funda Laptop">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Funda Laptop Cuerina 3D 15.6 Doble Acolchado</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Funda de laptop en cuerina 3D 15.6 con doble acolchado.</p>
+                    <button class="buy-btn details-btn" data-id="23">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="24">
+                <div class="product-header">
+                    <img src="img/accesorios/Conector RJ45 CAT AT5E Económico.webp" alt="Conector RJ45">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Conector RJ45 CAT AT5E Económico x 100</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Pack de 100 conectores RJ45 CAT5E económicos.</p>
+                    <button class="buy-btn details-btn" data-id="24">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="25">
+                <div class="product-header">
+                    <img src="img/accesorios/Cable USB Macho Macho.webp" alt="Cable USB Macho">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cable USB Macho Macho 0.30 CM</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cable USB macho-macho de 0.30 cm.</p>
+                    <button class="buy-btn details-btn" data-id="25">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="26">
+                <div class="product-header">
+                    <img src="img/accesorios/Barra Sonido Bluetooth 42cm.webp" alt="Barra Sonido">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Barra Sonido Bluetooth 42cm</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Barra de sonido con Bluetooth de 42cm de largo.</p>
+                    <button class="buy-btn details-btn" data-id="26">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="27">
+                <div class="product-header">
+                    <img src="img/accesorios/Cable USB Impresora.jpg" alt="Cable USB Impresora">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cable USB Impresora 1.50 MT</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cable de datos USB para impresora de 1.50 metros.</p>
+                    <button class="buy-btn details-btn" data-id="27">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- LAPTOPS -->
+            <div class="product-card" data-category="laptops" data-id="46">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop Lenovo Intel Core i3.webp" alt="Laptop Lenovo">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop Lenovo Intel Core i3/M 370</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop Lenovo con procesador Intel Core i3, 4GB RAM, 320GB HDD.</p>
+                    <button class="buy-btn details-btn" data-id="46">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="laptops" data-id="47">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop HP Intel Celeron 2GB" alt="Laptop HP">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop HP Intel Celeron 2GB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop HP con procesador Celeron, 2GB RAM, 500GB HDD.</p>
+                    <button class="buy-btn details-btn" data-id="47">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="laptops" data-id="48">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop Lenovo Celeron 4GB RAM.jpg" alt="Laptop Lenovo Celeron">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop Lenovo Celeron 4GB RAM 1TB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop Lenovo con procesador Celeron, 4GB RAM, 1TB HDD.</p>
+                    <button class="buy-btn details-btn" data-id="48">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="laptops" data-id="49">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop Dell Intel Core i3.jpg" alt="Laptop Dell">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop Dell Intel Core i5 7200U</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop Dell con procesador Core i5 7200U, 8GB RAM, 1TB HDD.</p>
+                    <button class="buy-btn details-btn" data-id="49">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="laptops" data-id="50">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop Dell Intel Core i5.avif" alt="Laptop Dell Core i3">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop Dell Intel Core i3 7020U</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop Dell con procesador Core i3 7020U, 8GB RAM, 1TB HDD.</p>
+                    <button class="buy-btn details-btn" data-id="50">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="laptops" data-id="51">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop Lenovo Intel Core i7.png" alt="Laptop Lenovo Core i7">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop Lenovo Intel Core i7 8550U</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop Lenovo con procesador Core i7 8550U, 12GB RAM, 240GB SSD, 2GB Video.</p>
+                    <button class="buy-btn details-btn" data-id="51">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="laptops" data-id="52">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop Lenovo Intel Core i3.webp" alt="Laptop Lenovo Core i3">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop Lenovo Core i3 6006U 8GB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop Lenovo con procesador Core i3 6006U, 8GB RAM, 1TB HDD.</p>
+                    <button class="buy-btn details-btn" data-id="52">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- CPU / COMPUTADORAS -->
+            <div class="product-card" data-category="computadoras" data-id="57">
+                <div class="product-header">
+                    <img src="img/computadoras/computadora hpns8cc.jfif" alt="Computadora HP">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Computadora HP NS:8CC853W5S</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Computadora HP de escritorio.</p>
+                    <button class="buy-btn details-btn" data-id="57">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="58">
+                <div class="product-header">
+                    <img src="img/computadoras/Case ATX Jupiter K04.jpg" alt="Case ATX">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case ATX Jupiter K04</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case ATX Jupiter K04 para torre de computadora.</p>
+                    <button class="buy-btn details-btn" data-id="58">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="60">
+                <div class="product-header">
+                    <img src="img/computadoras/Case E-ATX Snake C482TG.webp" alt="Case E-ATX">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case E-ATX Snake C482TG</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case E-ATX Snake C482TG.</p>
+                    <button class="buy-btn details-btn" data-id="60">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="61">
+                <div class="product-header">
+                    <img src="img/computadoras/Case ATX Fish Tank C708.jpg" alt="Case Fish Tank">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case ATX Fish Tank C708</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case ATX Fish Tank C708.</p>
+                    <button class="buy-btn details-btn" data-id="61">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="62">
+                <div class="product-header">
+                    <img src="img/computadoras/Case ATX Fish Tank C708 V2.webp" alt="Case Fish Tank V2">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case ATX Fish Tank C708 V2</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case ATX Fish Tank C708 V2.</p>
+                    <button class="buy-btn details-btn" data-id="62">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- MONITORES -->
+            <div class="product-card" data-category="monitores" data-id="113">
+                <div class="product-header">
+                    <img src="img/monitores/Monitor Full HD 120Hz.jfif" alt="Monitor Full HD">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Monitor Full HD 120Hz</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Monitor Full HD con tecnología 120Hz, ideal para trabajo y entretenimiento.</p>
+                    <button class="buy-btn details-btn" data-id="113">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="monitores" data-id="114">
+                <div class="product-header">
+                    <img src="img/monitores/Monitor Full HD Curvo 100Hz.avif" alt="Monitor Curvo">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Monitor Full HD Curvo 100Hz</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Monitor Full HD curvo con 100Hz de frecuencia de actualización.</p>
+                    <button class="buy-btn details-btn" data-id="114">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="monitores" data-id="115">
+                <div class="product-header">
+                    <img src="img/monitores/Monitor Full HD 120Hz RGB.webp" alt="Monitor RGB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Monitor Full HD 120Hz RGB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Monitor Full HD 120Hz con iluminación RGB personalizable.</p>
+                    <button class="buy-btn details-btn" data-id="115">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- SUMINISTROS -->
+            <div class="product-card" data-category="suministros" data-id="162">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Epson 127ML Black.jpg" alt="Tinta Epson Black">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Epson 127ML Black</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Epson de alta calidad 127ML color negro.</p>
+                    <button class="buy-btn details-btn" data-id="162">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="163">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Epson 70ML Cyan.webp" alt="Tinta Epson Cyan">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Epson 70ML Cyan</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Epson 70ML color cian de alto rendimiento.</p>
+                    <button class="buy-btn details-btn" data-id="163">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="164">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Epson 70ML Magenta.webp" alt="Tinta Epson Magenta">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Epson 70ML Magenta</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Epson 70ML color magenta.</p>
+                    <button class="buy-btn details-btn" data-id="164">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="165">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Epson 70ML Yellow.webp" alt="Tinta Epson Yellow">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Epson 70ML Yellow</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Epson 70ML color amarillo.</p>
+                    <button class="buy-btn details-btn" data-id="165">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- CÁMARAS -->
+
+            <div class="product-card" data-category="camaras" data-id="116">
+                <div class="product-header">
+                    <img src="img/camaras/Webcam W04 Blanco 640x480 Con Mic.jpg" alt="Webcam W04 Blanco">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Webcam W04 Blanco 640x480 Con Mic</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cámara web W04 blanco 640x480 con micrófono.</p>
+                    <button class="buy-btn details-btn" data-id="116">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="camaras" data-id="117">
+                <div class="product-header">
+                    <img src="img/camaras/Cámara web W04 negro 640x480 con micrófono.png" alt="Webcam W04 Negro">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Webcam W04 Negro 640x480 Con Mic</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cámara web W04 negro 640x480 con micrófono.</p>
+                    <button class="buy-btn details-btn" data-id="117">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- ACCESORIOS ADICIONALES -->
+            <div class="product-card" data-category="accesorios" data-id="30">
+                <div class="product-header">
+                    <img src="img/accesorios/Memoria USB DE-BM 16GB.jpg" alt="Memoria USB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Memoria USB DE-BM 16GB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Memoria USB 16GB de alta velocidad.</p>
+                    <button class="buy-btn details-btn" data-id="30">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="32">
+                <div class="product-header">
+                    <img src="img/accesorios/USB 32GB Bossney.jfif" alt="USB 32GB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">USB 32GB Bossney</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Memoria USB de 32GB Bossney.</p>
+                    <button class="buy-btn details-btn" data-id="32">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="33">
+                <div class="product-header">
+                    <img src="img/accesorios/Audífonos DE-A1979M Dexbo.webp" alt="Audífonos Dexbo">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Audífonos DE-A1979M Dexbo</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Audífonos Dexbo modelo DE-A1979M.</p>
+                    <button class="buy-btn details-btn" data-id="33">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="34">
+                <div class="product-header">
+                    <img src="img/accesorios/Cable Conector V8 KSC-982V8Micro.avif" alt="Cable V8">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cable Conector V8 KSC-982V8Micro</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cable conector V8 Micro.</p>
+                    <button class="buy-btn details-btn" data-id="34">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="35">
+                <div class="product-header">
+                    <img src="img/accesorios/Cargador Tipo C Para Celular.webp" alt="Cargador Tipo C">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cargador Tipo C Para Celular</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador USB Tipo C para celular.</p>
+                    <button class="buy-btn details-btn" data-id="35">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="36">
+                <div class="product-header">
+                    <img src="img/accesorios/Cargador Cable Tipo C Redd.webp" alt="Cargador Tipo C Redd">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cargador Cable Tipo C Redd</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador con cable Tipo C marca Redd.</p>
+                    <button class="buy-btn details-btn" data-id="36">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="37">
+                <div class="product-header">
+                    <img src="img/accesorios/Cargador Turbo XA6118.webp" alt="Cargador Turbo">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cargador Turbo XA6118 A+C 6.2A 80W</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador rápido XA6118 con puertos A+C, 6.2A, 80W.</p>
+                    <button class="buy-btn details-btn" data-id="37">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="38">
+                <div class="product-header">
+                    <img src="img/accesorios/Cable Datos 3 en 1.jpg" alt="Cable 3 en 1">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cable Datos 3 en 1</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cable de datos 3 en 1 multiconector.</p>
+                    <button class="buy-btn details-btn" data-id="38">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="39">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Con Cable Bossney.jfif" alt="Mouse Cable Bossney">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Con Cable Bossney</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse alámbrico Bossney.</p>
+                    <button class="buy-btn details-btn" data-id="39">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="40">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Con Cable Ewtto.jpg" alt="Mouse Cable Ewtto">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Con Cable Ewtto</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse alámbrico Ewtto.</p>
+                    <button class="buy-btn details-btn" data-id="40">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="41">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Inalámbrico A-311.webp" alt="Mouse Inalámbrico">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Inalámbrico A-311</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse inalámbrico modelo A-311.</p>
+                    <button class="buy-btn details-btn" data-id="41">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="42">
+                <div class="product-header">
+                    <img src="img/accesorios/Audífonos Inalámbricos TWS Ewtto.jpg" alt="Audífonos TWS">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Audífonos Inalámbricos TWS Ewtto</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Audífonos inalámbricos TWS Ewtto.</p>
+                    <button class="buy-btn details-btn" data-id="42">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="43">
+                <div class="product-header">
+                    <img src="img/accesorios/Teclado K7300-A7.webp" alt="Teclado">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Teclado K7300-A7</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado multimedia K7300-A7.</p>
+                    <button class="buy-btn details-btn" data-id="43">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="44">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse G-05 Bossney.webp" alt="Mouse Bossney G-05">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse G-05 Bossney</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse Bossney modelo G-05.</p>
+                    <button class="buy-btn details-btn" data-id="44">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- de aqui en adelante -->
+
+            <div class="product-card" data-category="accesorios" data-id="53">
+                <div class="product-header">
+                    <img src="img/accesorios/Pad Mouse Gel.webp" alt="Pad Mouse Gel">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Pad Mouse Gel</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Alfombrilla para mouse con gel.</p>
+                    <button class="buy-btn details-btn" data-id="53">Ver más detalles</button>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="accesorios" data-id="55">
+                <div class="product-header">
+                    <img src="img/accesorios/Mando PC Ucom704.jfif" alt="Mando PC">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mando PC Ucom704</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Controlador para PC Ucom704.</p>
+                    <button class="buy-btn details-btn" data-id="55">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- PARTE 2 - SUMINISTROS (TINTAS) -->
+            <div class="product-card" data-category="suministros" data-id="201">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Universal 1 Litro Cyan.webp" alt="Tinta Universal Cyan">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Universal 1 Litro Cyan</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta universal compatible 1 litro color cyan.</p>
+                    <button class="buy-btn details-btn" data-id="201">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="202">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Universal 1 Litro Magenta.jpg" alt="Tinta Universal Magenta">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Universal 1 Litro Magenta</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta universal compatible 1 litro color magenta.</p>
+                    <button class="buy-btn details-btn" data-id="202">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="203">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Universal 1 Litro Yellow.jpg" alt="Tinta Universal Yellow">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Universal 1 Litro Yellow</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta universal compatible 1 litro color amarillo.</p>
+                    <button class="buy-btn details-btn" data-id="203">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- PARTE 2 - ACCESORIOS (PERIFÉRICOS MEETION) -->
+            <div class="product-card" data-category="accesorios" data-id="254">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Escritorio Cable USB.png" alt="Mouse Escritorio Cable">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Escritorio Cable USB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse de escritorio con cable USB.</p>
+                    <button class="buy-btn details-btn" data-id="254">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="255">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Inalámbrico Recargable.webp" alt="Mouse Inalámbrico Recargable">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Inalámbrico Recargable</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse inalámbrico recargable silencioso.</p>
+                    <button class="buy-btn details-btn" data-id="255">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="257">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Óptico Portátil.webp" alt="Mouse Óptico Portátil">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Óptico Portátil</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse óptico para computadora portátil.</p>
+                    <button class="buy-btn details-btn" data-id="257">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="258">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse 3 Botones DPI Ajustables.webp" alt="Mouse 3 Botones DPI">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse 3 Botones DPI Ajustables</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse con 3 botones y DPI ajustables.</p>
+                    <button class="buy-btn details-btn" data-id="258">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="259">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Inalámbrico MiniGo.webp" alt="Mouse Inalámbrico MiniGo">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Inalámbrico MiniGo</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse inalámbrico portátil MiniGo.</p>
+                    <button class="buy-btn details-btn" data-id="259">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="260">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Gaming Retroiluminado.jfif" alt="Mouse Gaming Retroiluminado">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Gaming Retroiluminado</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse para juegos con retroiluminación.</p>
+                    <button class="buy-btn details-btn" data-id="260">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="262">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Gaming Con Luz RGB.jpg" alt="Mouse RGB Gaming">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Gaming Con Luz RGB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse para juegos con luz RGB programable.</p>
+                    <button class="buy-btn details-btn" data-id="262">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="267">
+                <div class="product-header">
+                    <img src="img/accesorios/Teclado USB Office Estándar.jfif" alt="Teclado USB Office">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Teclado USB Office Estándar</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado con cable estándar USB para oficina.</p>
+                    <button class="buy-btn details-btn" data-id="267">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="268">
+                <div class="product-header">
+                    <img src="img/accesorios/Teclado Multimedia USB Plug Play.jfif" alt="Teclado Multimedia USB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Teclado Multimedia USB Plug Play</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado multimedia USB Plug and Play.</p>
+                    <button class="buy-btn details-btn" data-id="268">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="272">
+                <div class="product-header">
+                    <img src="img/accesorios/Teclado Gaming Retroiluminado.jpg" alt="Teclado Gaming Retroiluminado">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Teclado Gaming Retroiluminado</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado para juegos con retroiluminación resistente al agua.</p>
+                    <button class="buy-btn details-btn" data-id="272">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="275">
+                <div class="product-header">
+                    <img src="img/accesorios/Mini Teclado Mecánico 60% RGB.jpg" alt="Teclado Mecánico 60%">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mini Teclado Mecánico 60% RGB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mini teclado mecánico con cable 60% con RGB.</p>
+                    <button class="buy-btn details-btn" data-id="275">Ver más detalles</button>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="accesorios" data-id="279">
+                <div class="product-header">
+                    <img src="img/accesorios/Office Combo Teclado Mouse Inalámbrico.jfif" alt="Office Combo Inalámbrico">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Office Combo Teclado Mouse Inalámbrico</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit ofimática con teclado y mouse inalámbrico.</p>
+                    <button class="buy-btn details-btn" data-id="279">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="282">
+                <div class="product-header">
+                    <img src="img/accesorios/Gaming Combo 3 en 1 Con Pad.webp" alt="Gaming Combo 3 en 1">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Gaming Combo 3 en 1 Con Pad</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit gaming 3 en 1 con teclado, mouse y pad.</p>
+                    <button class="buy-btn details-btn" data-id="282">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- PARTE 2 - TINTA INK JET REPROCESADA -->
+            <div class="product-card" data-category="suministros" data-id="287">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Ink Jet EPSON 127ML Black.webp" alt="Tinta Ink Jet EPSON Black">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Ink Jet EPSON 127ML Black</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Ink Jet EPSON 127ML color negro reprocesada.</p>
+                    <button class="buy-btn details-btn" data-id="287">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="289">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Ink Jet EPSON 70ML Magenta.webp" alt="Tinta Ink Jet EPSON Magenta">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Ink Jet EPSON 70ML Magenta</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Ink Jet EPSON 70ML color magenta.</p>
+                    <button class="buy-btn details-btn" data-id="289">Ver más detalles</button>
+                </div>
+            </div>
+
+
+            <!-- PARTE 2 - CÁMARAS WEB -->
+            <div class="product-card" data-category="camaras" data-id="422">
+                <div class="product-header">
+                    <img src="img/camaras/Cámara web W04 negro 640x480 con micrófono.png" alt="Quantum Webcam">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Quantum Webcam 1440QHD + Trípode</h3>
+                    <p class="price">Consultar</p>
+                    <p class="product-description">Cámara web Quantum 1440QHD con trípode incluido.</p>
+                    <button class="buy-btn details-btn" data-id="422">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="camaras" data-id="423">
+                <div class="product-header">
+                    <img src="img/camaras/Cámara Web 1080P Con Lente 2P2G.jfif" alt="Cámara Web 1080P">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cámara Web 1080P Con Lente 2P2G</h3>
+                    <p class="price">Consultar</p>
+                    <p class="product-description">Cámara web 1080P con lente 2P2G de alta calidad.</p>
+                    <button class="buy-btn details-btn" data-id="423">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- PARTE 2 - REGULADORES Y PROTECTORES -->
+            <div class="product-card" data-category="accesorios" data-id="424">
+                <div class="product-header">
+                    <img src="img/accesorios/Regulador Automático 1000VA-500W.jpg" alt="Regulador Voltaje">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Regulador Automático 1000VA/500W</h3>
+                    <p class="price">Consultar</p>
+                    <p class="product-description">Regulador automático de voltaje 1000VA/500W con 4 salidas.</p>
+                    <button class="buy-btn details-btn" data-id="424">Ver más detalles</button>
+                </div>
+            </div>
+
+
+            <!-- PARTE 2 - CARGADORES LAPTOP -->
+            <div class="product-card" data-category="accesorios" data-id="465">
+                <div class="product-header">
+                    <img src="img/accesorios/Cargador Laptop Toshiba 19V 3.42A.jfif" alt="Cargador Toshiba">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cargador Laptop Toshiba 19V 3.42A</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador Toshiba 19V 3.42A con punta negra.</p>
+                    <button class="buy-btn details-btn" data-id="465">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="475">
+                <div class="product-header">
+                    <img src="img/accesorios/Cargador HP 19.5V 3.33A Punta Azul.jpg" alt="Cargador HP 19.5V">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Cargador HP 19.5V 3.33A Punta Azul</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador HP 19.5V 3.33A con punta azul.</p>
+                    <button class="buy-btn details-btn" data-id="475">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- PARTE 2 - LAPTOPS Y COMPUTADORAS FINALES -->
+            <div class="product-card" data-category="laptops" data-id="1546">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop Lenovo Core i3 6006U.jpg" alt="Laptop Lenovo Corei3">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop Lenovo Corei3 6006U 8GB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop Lenovo con procesador Corei3 6006U, 8GB RAM, 1TB HDD.</p>
+                    <button class="buy-btn details-btn" data-id="1546">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="laptops" data-id="1547">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop Gamer ASUS Intel Corei5.jfif" alt="Laptop Gamer ASUS">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop Gamer ASUS Intel Corei5</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop gamer ASUS con procesador Corei5 de última generación.</p>
+                    <button class="buy-btn details-btn" data-id="1547">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="laptops" data-id="1548">
+                <div class="product-header">
+                    <img src="img/laptos/Laptop Lenovo V330.avif" alt="Laptop Lenovo V330">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Laptop Lenovo V330</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Laptop Lenovo modelo V330 para negocios.</p>
+                    <button class="buy-btn details-btn" data-id="1548">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="1549">
+                <div class="product-header">
+                    <img src="img/computadoras/CPU Completo Corei3 Décima Gen.webp" alt="CPU Corei3">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CPU Completo Corei3 Décima Gen</h3>
+                    <p class="price"></p>
+                    <p class="product-description">CPU completo con procesador Corei3 décima generación, 8GB RAM, 500GB SSD.</p>
+                    <button class="buy-btn details-btn" data-id="1549">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="1550">
+                <div class="product-header">
+                    <img src="img/computadoras/Case Solo Para Torre.jfif" alt="Case Solo">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case Solo Para Torre</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case solo para torre de computadora.</p>
+                    <button class="buy-btn details-btn" data-id="1550">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="1551">
+                <div class="product-header">
+                    <img src="img/computadoras/CPU Gigabay Corei3 Tercera Gen.jfif" alt="CPU Gigabay">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CPU Gigabay Corei3 Tercera Gen</h3>
+                    <p class="price"></p>
+                    <p class="product-description">CPU Gigabay con procesador Corei3 tercera generación, 4GB RAM, 500GB.</p>
+                    <button class="buy-btn details-btn" data-id="1551">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="1552">
+                <div class="product-header">
+                    <img src="img/computadoras/CPU DataOne Intel Corei7.jfif" alt="CPU DataOne">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CPU DataOne Intel Corei7</h3>
+                    <p class="price"></p>
+                    <p class="product-description">CPU DataOne con procesador Intel Corei7 cuarta generación, 8GB RAM, 500GB.</p>
+                    <button class="buy-btn details-btn" data-id="1552">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="monitores" data-id="1553">
+                <div class="product-header">
+                    <img src="img/computadoras/Monitor Samsung 19 Pulgadas.jfif" alt="Monitor Samsung 19">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Monitor Samsung 19 Pulgadas</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Monitor Samsung de 19 pulgadas.</p>
+                    <button class="buy-btn details-btn" data-id="1553">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="monitores" data-id="1554">
+                <div class="product-header">
+                    <img src="img/computadoras/Monitor LG 19.5 Pulgadas.jfif" alt="Monitor LG 19.5">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Monitor LG 19.5 Pulgadas</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Monitor LG de 19.5 pulgadas.</p>
+                    <button class="buy-btn details-btn" data-id="1554">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="monitores" data-id="1555">
+                <div class="product-header">
+                    <img src="img/computadoras/Monitor Samsung 19 Con HDMI.webp" alt="Monitor Samsung HDMI">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Monitor Samsung 19 Con HDMI</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Monitor Samsung de 19 pulgadas con entrada HDMI.</p>
+                    <button class="buy-btn details-btn" data-id="1555">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="monitores" data-id="1556">
+                <div class="product-header">
+                    <img src="img/computadoras/Monitor AIO LG 24 Corei3.webp" alt="Monitor AIO LG">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Monitor AIO LG 24" Corei3</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Monitor All-In-One LG 24" con Corei3 décima gen, 4GB RAM, 500GB.</p>
+                    <button class="buy-btn details-btn" data-id="1556">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="impresoras" data-id="1557">
+                <div class="product-header">
+                    <img src="img/impresoras/Impresora Epson L355.jfif" alt="Impresora Epson L355">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">EPSON</p>
+                    <h3 class="product-name">Impresora Epson L355</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Impresora Epson modelo L355.</p>
+                    <button class="buy-btn details-btn" data-id="1557">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="impresoras" data-id="3000">
+                <div class="product-header">
+                    <img src="img/impresoras/Impresora L220.png" alt="Impresora Epson L355">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"> EPSON</p>
+                    <h3 class="product-name">Impresora L220</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Impresora Epson modelo L220.</p>
+                    <button class="buy-btn details-btn" data-id="3000">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="impresoras" data-id="3001">
+                <div class="product-header">
+                    <img src="img/impresoras/Impresora T310.jfif" alt="Impresora Epson L355">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"> BROTHER</p>
+                    <h3 class="product-name">Impresora T310</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Impresora Brother modelo T310</p>
+                    <button class="buy-btn details-btn" data-id="3001">Ver más detalles</button>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="impresoras" data-id="1559">
+                <div class="product-header">
+                    <img src="img/impresoras/Impresora Epson L3110.png" alt="Impresora Epson L3110">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">EPSON</p>
+                    <h3 class="product-name">Impresora Epson L3110</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Impresora Epson modelo L3110.</p>
+                    <button class="buy-btn details-btn" data-id="1559">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="cpu" data-id="1560">
+                <div class="product-header">
+                    <img src="img/cpus/SSD Samsung M.2 NVME 512GB.jfif" alt="Samsung SSD">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">SSD Samsung M.2 NVME 512GB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Unidad de estado sólido Samsung M.2 NVME de 512GB.</p>
+                    <button class="buy-btn details-btn" data-id="1560">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="1562">
+                <div class="product-header">
+                    <img src="img/computadoras/CPU Lenovo ThinkCentre Corei5.jpg" alt="CPU Lenovo ThinkCentre">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CPU Lenovo ThinkCentre Corei5</h3>
+                    <p class="price"></p>
+                    <p class="product-description">CPU Lenovo ThinkCentre con Corei5, 4GB RAM, 500GB HDD.</p>
+                    <button class="buy-btn details-btn" data-id="1562">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- PARLANTES -->
+            <div class="product-card" data-category="accesorios" data-id="141">
+                <div class="product-header">
+                    <img src="img/accesorios/Parlante Draco 2.1 RGB 80W.jfif" alt="Parlante Draco">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Parlante Draco 2.1 RGB 80W</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Parlante 2.1 Draco RGB 80W.</p>
+                    <button class="buy-btn details-btn" data-id="141">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="142">
+                <div class="product-header">
+                    <img src="img/accesorios/Parlante Bath 2.1 RGB 80W.jfif" alt="Parlante Bath">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Parlante Bath 2.1 RGB 80W</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Parlante 2.1 Bath RGB 80W.</p>
+                    <button class="buy-btn details-btn" data-id="142">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accesorios" data-id="143">
+                <div class="product-header">
+                    <img src="img/accesorios/Parlante Bristol 2.1 RGB 80W.webp" alt="Parlante Bristol">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Parlante Bristol 2.1 RGB 80W</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Parlante 2.1 Bristol RGB 80W.</p>
+                    <button class="buy-btn details-btn" data-id="143">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- CASES - COMPLETA LA LÍNEA DE COMPUTADORAS -->
+            <div class="product-card" data-category="computadoras" data-id="63">
+                <div class="product-header">
+                    <img src="img/computadoras/Case Micro ATX Ragnarok 321.webp" alt="Case Micro ATX Ragnarok 321">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case Micro ATX Ragnarok 321</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case Micro ATX Ragnarok 321.</p>
+                    <button class="buy-btn details-btn" data-id="63">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="66">
+                <div class="product-header">
+                    <img src="img/computadoras/Case ATX Stuka CR11.webp" alt="Case ATX Stuka CR11">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case ATX Stuka CR11</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case ATX Stuka CR11.</p>
+                    <button class="buy-btn details-btn" data-id="66">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="67">
+                <div class="product-header">
+                    <img src="img/computadoras/Case ATX Buffalo CR41.webp" alt="Case ATX Buffalo CR41">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case ATX Buffalo CR41</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case ATX Buffalo CR41.</p>
+                    <button class="buy-btn details-btn" data-id="67">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="71">
+                <div class="product-header">
+                    <img src="img/computadoras/Case ATX Geminis CR30.jpg" alt="Case ATX Geminis CR30">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case ATX Geminis CR30</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case ATX Geminis CR30.</p>
+                    <button class="buy-btn details-btn" data-id="71">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="computadoras" data-id="79">
+                <div class="product-header">
+                    <img src="img/computadoras/Case ATX Tornado 06.jfif" alt="Case ATX Tornado 06">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Case ATX Tornado 06</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Case ATX Tornado 06.</p>
+                    <button class="buy-btn details-btn" data-id="79">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!--tintas-->
+
+            <div class="product-card" data-category="suministros" data-id="170">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Brother 100ML Black.webp" alt="Tinta BROTHER 100ML Black">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Brother 100ML Black</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Brother 100ML color negro.</p>
+                    <button class="buy-btn details-btn" data-id="170">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="171">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Brother 100ML Cyan.jfif" alt="Tinta BROTHER 100ML Cyan">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Brother 100ML Cyan</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Brother 100ML color cian.</p>
+                    <button class="buy-btn details-btn" data-id="171">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="172">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Brother 100ML Black.webp" alt="Tinta BROTHER 100ML Magenta">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Brother 100ML Magenta</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Brother 100ML color magenta.</p>
+                    <button class="buy-btn details-btn" data-id="172">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="173">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Brother 100ML Yellow.jfif" alt="Tinta BROTHER 100ML Yellow">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Brother 100ML Yellow</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Brother 100ML color amarillo.</p>
+                    <button class="buy-btn details-btn" data-id="173">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="174">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Canon 135ML Black.jfif" alt="Tinta CANON 135ML Black">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Canon 135ML Black</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Canon 135ML color negro.</p>
+                    <button class="buy-btn details-btn" data-id="174">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="175">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Canon 70ML Cyan.jfif" alt="Tinta CANON 70ML Cyan">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Canon 70ML Cyan</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Canon 70ML color cian.</p>
+                    <button class="buy-btn details-btn" data-id="175">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="176">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Canon 70ML Magenta.jfif" alt="Tinta CANON 70ML Magenta">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Canon 70ML Magenta</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Canon 70ML color magenta.</p>
+                    <button class="buy-btn details-btn" data-id="176">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="177">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta Canon 70ML Yellow.jfif" alt="Tinta CANON 70ML Yellow">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta Canon 70ML Yellow</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta Canon 70ML color amarillo.</p>
+                    <button class="buy-btn details-btn" data-id="177">Ver más detalles</button>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="suministros" data-id="179">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta HP 100ML Cyan.jfif" alt="Tinta HP 100ML Cyan">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta HP 100ML Cyan</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta HP 100ML color cian.</p>
+                    <button class="buy-btn details-btn" data-id="179">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="180">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta HP 100ML Magenta.jfif" alt="Tinta HP 100ML Magenta">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta HP 100ML Magenta</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta HP 100ML color magenta.</p>
+                    <button class="buy-btn details-btn" data-id="180">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="suministros" data-id="181">
+                <div class="product-header">
+                    <img src="img/suministros/Tinta HP 100ML Yellow.jfif" alt="Tinta HP 100ML Yellow">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Tinta HP 100ML Yellow</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Tinta HP 100ML color amarillo.</p>
+                    <button class="buy-btn details-btn" data-id="181">Ver más detalles</button>
+                </div>
+            </div>
+
+             <!-- TINTA QUAD COLOR PARA BROTHER -->
+             <div class="product-card" data-category="suministros" data-id="1567">
+                <div class="product-header">
+                    <img src="img/suministros/TINTA QUAD COLOR PARA BROTHER BLACK.jfif" alt="TINTA QUAD COLOR BROTHER BLACK">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">TINTA QUAD COLOR PARA BROTHER BLACK</h3>
+                    <p class="price">Consultar</p>
+                    <p class="product-description">Tinta Quad Color compatible para Brother en color negro.</p>
+                    <button class="buy-btn details-btn" data-id="1567">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="suministros" data-id="1568">
+                <div class="product-header">
+                    <img src="img/suministros/TINTA QUAD COLOR PARA BROTHER CYAN.jfif" alt="TINTA QUAD COLOR BROTHER CYAN">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">TINTA QUAD COLOR PARA BROTHER CYAN</h3>
+                    <p class="price">Consultar</p>
+                    <p class="product-description">Tinta Quad Color compatible para Brother en color cyan.</p>
+                    <button class="buy-btn details-btn" data-id="1568">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="suministros" data-id="1569">
+                <div class="product-header">
+                    <img src="img/suministros/TINTA QUAD COLOR PARA BROTHER MAGENTA.jfif" alt="TINTA QUAD COLOR BROTHER MAGENTA">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">TINTA QUAD COLOR PARA BROTHER MAGENTA</h3>
+                    <p class="price">Consultar</p>
+                    <p class="product-description">Tinta Quad Color compatible para Brother en color magenta.</p>
+                    <button class="buy-btn details-btn" data-id="1569">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="suministros" data-id="1570">
+                <div class="product-header">
+                    <img src="img/suministros/TINTA QUAD COLOR PARA BROTHER YELLOW.jfif" alt="TINTA QUAD COLOR BROTHER YELLOW">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">TINTA QUAD COLOR PARA BROTHER YELLOW</h3>
+                    <p class="price">Consultar</p>
+                    <p class="product-description">Tinta Quad Color compatible para Brother en color amarillo.</p>
+                    <button class="buy-btn details-btn" data-id="1570">Ver más detalles</button>
+                </div>
+            </div>
+
+             <!-- MOUSE Y TECLADOS - ACCESORIOS PERIFÉRICOS -->
+             <div class="product-card" data-category="accesorios" data-id="1587">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Inalámbrico Recargable.webp" alt="Mouse inalámbrico recargable silencioso">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Inalámbrico Recargable Silencioso</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse inalámbrico con batería recargable y botones silenciosos.</p>
+                    <button class="buy-btn details-btn" data-id="1587">Ver más detalles</button>
+                </div>
+            </div>
+
+
+             <div class="product-card" data-category="accesorios" data-id="1589">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Óptico Portátil.webp" alt="Mouse óptico portátil">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Óptico Para Computadora Portátil</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse óptico compacto diseñado para laptops.</p>
+                    <button class="buy-btn details-btn" data-id="1589">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1590">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse 3 Botones DPI Ajustables.webp" alt="Mouse 3 botones DPI">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse 3 Botones DPI Ajustables</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse con 3 botones y DPI ajustables.</p>
+                    <button class="buy-btn details-btn" data-id="1590">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1591">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Inalámbrico MiniGo.webp" alt="Mouse inalámbrico MiniGo">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Inalámbrico MiniGo</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse inalámbrico compacto modelo MiniGo.</p>
+                    <button class="buy-btn details-btn" data-id="1591">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1592">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Gaming Retroiluminado.jfif" alt="Mouse retroiluminado Gaming">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Retroiluminado Gaming</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse gaming con retroiluminación LED.</p>
+                    <button class="buy-btn details-btn" data-id="1592">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!--quedo aqui-->
+
+             <div class="product-card" data-category="accesorios" data-id="1595">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Juegos Policromado.jfif" alt="Mouse juegos policromado">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Juegos Policromado</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse para juegos con iluminación policromada RGB.</p>
+                    <button class="buy-btn details-btn" data-id="1595">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1596">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Juegos Policromado Premium.jpg" alt="Mouse juegos policromado Premium">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Juegos Policromado Premium</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse gaming premium con iluminación policromada avanzada.</p>
+                    <button class="buy-btn details-btn" data-id="1596">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1597">
+                <div class="product-header">
+                    <img src="img/accesorios/Mouse Juegos Policromado Modelo 2.jfif" alt="Mouse juegos policromado Modelo 2">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Mouse Juegos Policromado Modelo 2</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Mouse gaming con iluminación policromada, modelo 2.</p>
+                    <button class="buy-btn details-btn" data-id="1597">Ver más detalles</button>
+                </div>
+            </div>
+
+             <!-- TECLADOS -->
+
+             <div class="product-card" data-category="accesorios" data-id="1599">
+                <div class="product-header">
+                    <img src="img/accesorios/Teclado De Escritorio USB Con HUB Alta Calidad.jfif" alt="Teclado escritorio USB HUB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Teclado De Escritorio USB Con HUB Alta Calidad</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado USB de escritorio con hub integrado de alta calidad.</p>
+                    <button class="buy-btn details-btn" data-id="1599">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1600">
+                <div class="product-header">
+                    <img src="img/accesorios/Teclado Inalámbrico Árabe.jfif" alt="Teclado inalámbrico Árabe">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Teclado Inalámbrico Árabe</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado inalámbrico con distribución de teclas en árabe.</p>
+                    <button class="buy-btn details-btn" data-id="1600">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1601">
+                <div class="product-header">
+                    <img src="img/accesorios/Teclado Para Juegos Retroiluminado Prueba Agua.jfif" alt="Teclado para juegos retroiluminado">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Teclado Para Juegos Retroiluminado Prueba Agua</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado gaming retroiluminado resistente al agua.</p>
+                    <button class="buy-btn details-btn" data-id="1601">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1603">
+                <div class="product-header">
+                    <img src="img/accesorios/Teclado mecánico con switches RGB.webp" alt="Teclado mecánico Switch RGB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Teclado Mecánico Switch RGB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado mecánico con switches RGB de alta calidad.</p>
+                    <button class="buy-btn details-btn" data-id="1603">Ver más detalles</button>
+                </div>
+            </div>
+
+             <!-- AURICULARES Y ALFOMBRILLAS -->
+             <div class="product-card" data-category="accesorios" data-id="1605">
+                <div class="product-header">
+                    <img src="img/accesorios/Auriculares Gamer LED HIFI 7.1 Con Micrófono.jfif" alt="Auriculares Gamer LED HIFI">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Auriculares Gamer LED HIFI 7.1 Con Micrófono</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Auriculares gaming 7.1 HIFI con LED y micrófono integrado.</p>
+                    <button class="buy-btn details-btn" data-id="1605">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1606">
+                <div class="product-header">
+                    <img src="img/accesorios/Auriculares Gamer Tecnología Sonido Envolvente 3D.jfif" alt="Auriculares Gamer 3D">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Auriculares Gamer Tecnología Sonido Envolvente 3D</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Auriculares gaming con tecnología de sonido envolvente 3D.</p>
+                    <button class="buy-btn details-btn" data-id="1606">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1607">
+                <div class="product-header">
+                    <img src="img/accesorios/Alfombrilla De Ratón Juegos Impermeable Lavable.jfif" alt="Alfombrilla ratón juegos">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Alfombrilla De Ratón Juegos Impermeable Lavable</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Alfombrilla gaming impermeable y lavable de alta durabilidad.</p>
+                    <button class="buy-btn details-btn" data-id="1607">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1608">
+                <div class="product-header">
+                    <img src="img/accesorios/Alfombrilla De Ratón Impermeable Fácil Limpiar.jfif" alt="Alfombrilla ratón impermeable">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">Alfombrilla De Ratón Impermeable Fácil Limpiar</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Alfombrilla de ratón impermeable, fácil de limpiar.</p>
+                    <button class="buy-btn details-btn" data-id="1608">Ver más detalles</button>
+                </div>
+            </div>
+
+             <!-- CARGADORES PARA LAPTOPS -->
+             <div class="product-card" data-category="accesorios" data-id="1614">
+                <div class="product-header">
+                    <img src="img/accesorios/CARGADOR COMPATIBLE MAC APPLE 14.85V 3.65A MAGNETIC.jfif" alt="CARGADOR COMPATIBLE MAC APPLE 14.85V">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CARGADOR COMPATIBLE MAC APPLE 14.85V 3.65A MAGNETIC</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador compatible MacBook 14.85V 3.65A con conector magnético.</p>
+                    <button class="buy-btn details-btn" data-id="1614">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1616">
+                <div class="product-header">
+                    <img src="img/accesorios/CARGADOR MACBOOK PRO 20V 4.35A USB-C 87W.webp" alt="CARGADOR MACBOOK PRO 20V">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CARGADOR MACBOOK PRO 20V 4.35A USB-C 87W</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador MacBook Pro 20V 4.35A con puerto USB-C 87W.</p>
+                    <button class="buy-btn details-btn" data-id="1616">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1617">
+                <div class="product-header">
+                    <img src="img/accesorios/CARGADOR HUAWEI Y MACBOOK AIR 20V 3.25A USB-C.jfif" alt="CARGADOR HUAWEI Y MACBOOK AIR">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CARGADOR HUAWEI Y MACBOOK AIR 20V 3.25A USB-C</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador compatible Huawei y MacBook Air 20V 3.25A USB-C.</p>
+                    <button class="buy-btn details-btn" data-id="1617">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1618">
+                <div class="product-header">
+                    <img src="img/accesorios/CARGADOR LAPTOP MINI TOSHIBA 19V 1.58A PUNTA NEGRA.jfif" alt="CARGADOR LAPTOP MINI TOSHIBA">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CARGADOR LAPTOP MINI TOSHIBA 19V 1.58A PUNTA NEGRA</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador Toshiba mini 19V 1.58A con punta negra.</p>
+                    <button class="buy-btn details-btn" data-id="1618">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1624">
+                <div class="product-header">
+                    <img src="img/accesorios/CARGADOR HP 18.5V 3.5A PUNTA AGUJA.jfif" alt="CARGADOR HP 18.5V 3.5A PUNTA AGUJA">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CARGADOR HP 18.5V 3.5A PUNTA AGUJA</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador HP 18.5V 3.5A con punta aguja.</p>
+                    <button class="buy-btn details-btn" data-id="1624">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1625">
+                <div class="product-header">
+                    <img src="img/accesorios/CARGADOR HP 18.5V 3.5A PUNTA AMARILLA.webp" alt="CARGADOR HP 18.5V 3.5A PUNTA AMARILLA">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CARGADOR HP 18.5V 3.5A PUNTA AMARILLA</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador HP 18.5V 3.5A con punta amarilla.</p>
+                    <button class="buy-btn details-btn" data-id="1625">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1628">
+                <div class="product-header">
+                    <img src="img/accesorios/Cargador HP 19.5V 2.31A con punta azul negra.webp" alt="CARGADOR HP 19.5V 2.31A PUNTA AZUL NEGRA">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CARGADOR HP 19.5V 2.31A PUNTA AZUL NEGRA</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador HP 19.5V 2.31A con punta azul negra.</p>
+                    <button class="buy-btn details-btn" data-id="1628">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1633">
+                <div class="product-header">
+                    <img src="img/accesorios/CARGADOR LAPTOP LENOVO 20V 2.25A PUNTA USB MINI.webp" alt="CARGADOR LAPTOP LENOVO 20V">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">CARGADOR LAPTOP LENOVO 20V 2.25A PUNTA USB MINI</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Cargador Lenovo 20V 2.25A con punta USB mini.</p>
+                    <button class="buy-btn details-btn" data-id="1633">Ver más detalles</button>
+                </div>
+            </div>
+
+             <!-- TECLADOS ENKORE -->
+             <div class="product-card" data-category="accesorios" data-id="1634">
+                <div class="product-header">
+                    <img src="img/accesorios/Teclado ENKORE modelo PIVOT.webp" alt="PIVOT Teclado USB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">PIVOT Teclado USB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado ENKORE modelo PIVOT con conexión USB.</p>
+                    <button class="buy-btn details-btn" data-id="1634">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1635">
+                <div class="product-header">
+                    <img src="img/accesorios/GOSPEL Teclado USB.webp" alt="GOSPEL Teclado USB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">GOSPEL Teclado USB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado ENKORE modelo GOSPEL con conexión USB.</p>
+                    <button class="buy-btn details-btn" data-id="1635">Ver más detalles</button>
+                </div>
+            </div>
+
+             <!-- KITS INALÁMBRICOS -->
+             <div class="product-card" data-category="accesorios" data-id="1641">
+                <div class="product-header">
+                    <img src="img/accesorios/Kit inalámbrico EXCEL ENT 701.2 teclado y mouse.jfif" alt="KIT EXCEL ENT 701.2">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">KIT EXCEL ENT 701.2</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit inalámbrico EXCEL ENT 701.2 teclado y mouse.</p>
+                    <button class="buy-btn details-btn" data-id="1641">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1642">
+                <div class="product-header">
+                    <img src="img/accesorios/KIT EBONY ENK T800.webp" alt="KIT EBONY ENK T800">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">KIT EBONY ENK T800</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit inalámbrico EBONY ENK T800 teclado y mouse.</p>
+                    <button class="buy-btn details-btn" data-id="1642">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1643">
+                <div class="product-header">
+                    <img src="img/accesorios/Kit inalámbrico PREMIER teclado y mouse.jfif" alt="KIT PREMIER">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">KIT PREMIER</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit inalámbrico PREMIER teclado y mouse.</p>
+                    <button class="buy-btn details-btn" data-id="1643">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1644">
+                <div class="product-header">
+                    <img src="img/accesorios/Kit gaming HACKER.webp" alt="KIT HACKER">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">KIT HACKER</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit gaming HACKER con teclado y mouse especiales.</p>
+                    <button class="buy-btn details-btn" data-id="1644">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1645">
+                <div class="product-header">
+                    <img src="img/accesorios/Kit gaming QUANTUM.webp" alt="KIT QUANTUM">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">KIT QUANTUM</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit gaming QUANTUM teclado y mouse RGB.</p>
+                    <button class="buy-btn details-btn" data-id="1645">Ver más detalles</button>
+                </div>
+            </div>
+
+             <!-- TECLADOS GAMER -->
+             <div class="product-card" data-category="accesorios" data-id="1646">
+                <div class="product-header">
+                    <img src="img/accesorios/TECLADO GAMER USB RAINBOW.jfif" alt="TECLADO GAMER USB RAINBOW">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">TECLADO GAMER USB RAINBOW</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado gaming USB con iluminación rainbow.</p>
+                    <button class="buy-btn details-btn" data-id="1646">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1649">
+                <div class="product-header">
+                    <img src="img/accesorios/KIT GAMER 4 EN 1.jfif" alt="KIT GAMER 4 EN 1">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">KIT GAMER 4 EN 1</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit gamer 4 en 1 con periféricos completos.</p>
+                    <button class="buy-btn details-btn" data-id="1649">Ver más detalles</button>
+                </div>
+            </div>
+
+             <div class="product-card" data-category="accesorios" data-id="1650">
+                <div class="product-header">
+                    <img src="img/accesorios/TECLADO GAMER MECANICO USB.jfif" alt="TECLADO GAMER MECANICO USB">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">TECLADO GAMER MECANICO USB</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado gaming mecánico con conexión USB.</p>
+                    <button class="buy-btn details-btn" data-id="1650">Ver más detalles</button>
+                </div>
+            </div>
+
+
+             <div class="product-card" data-category="accesorios" data-id="1656">
+                <div class="product-header">
+                    <img src="img/accesorios/KIT GAMER 3 EN 1 BLANCO.jfif" alt="KIT GAMER 3 EN 1 BLANCO">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">KIT GAMER 3 EN 1 BLANCO</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Kit gaming 3 en 1 color blanco.</p>
+                    <button class="buy-btn details-btn" data-id="1656">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- Placas -->
+
+            <div class="product-card" data-category="cpu" data-id="1900">
+                <div class="product-header">
+                    <img src="img/cpus/PLACA MADRE PRIME A 320M-K.png" alt="placa madre 1">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">ASUS</p>
+                    <h3 class="product-name">Placa Madre</h3>
+                    <p class="price"></p>
+                    <p class="product-description">PLACA MADRE PRIME A 320M-K.</p>
+                    <button class="buy-btn details-btn" data-id="1900">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="cpu" data-id="1901">
+                <div class="product-header">
+                    <img src="img/cpus/PLACA MADRE GA.jfif" alt="placa madre 2">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"> GIGABITE</p>
+                    <h3 class="product-name">Placa Madre</h3>
+                    <p class="price"></p>
+                    <p class="product-description">PLACA MADRE GA-H61M-DS2.</p>
+                    <button class="buy-btn details-btn" data-id="1902">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!--fuentes de poder-->
+
+            <div class="product-card" data-category="cpu" data-id="1903">
+                <div class="product-header">
+                    <img src="img/cpus/fuente de poder cool.jfif" alt="fuente de poder 1">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">COOL MASTER</p>
+                    <h3 class="product-name">Fuente de poder</h3>
+                    <p class="price"></p>
+                    <p class="product-description">FUENTE DE PODER COOL MASTER 600W.</p>
+                    <button class="buy-btn details-btn" data-id="1903">Ver más detalles</button>
+                </div>
+            </div>
+
+             <!--Repuestos-->
+
+            <div class="product-card" data-category="respuestos" data-id="1904">
+                <div class="product-header">
+                    <img src="img/repuestos/microprocesador amd.webp" alt="microprocesador 1">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">AMD</p>
+                    <h3 class="product-name">Microprocesador</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Microprocesador amd phenom II.</p>
+                    <button class="buy-btn details-btn" data-id="1904">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="respuestos" data-id="1904">
+                <div class="product-header">
+                    <img src="img/repuestos/Microprocesador intel.jpg" alt="microprocesador 2">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">INTEL</p>
+                    <h3 class="product-name">Microprocesador</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Microprocesador intel Core i3 4160 3.60ghz.</p>
+                    <button class="buy-btn details-btn" data-id="1904">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="respuestos" data-id="1904">
+                <div class="product-header">
+                    <img src="img/repuestos/pantallarepuesto.webp" alt="pantalla 1">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">Lenovo</p>
+                    <h3 class="product-name">Pantalla Lenovo Repuesto </h3>
+                    <p class="price"></p>
+                    <p class="product-description">Pantalla de repuesto para laptop Lenovo.</p>
+                    <button class="buy-btn details-btn" data-id="1904">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="respuestos" data-id="1904">
+                <div class="product-header">
+                    <img src="img/repuestos/repuestopantallahp.jfif" alt="pantalla 2">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">HP</p>
+                    <h3 class="product-name">Pantalla HP repuesto</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Pantalla de repuesto para laptop HP.</p>
+                    <button class="buy-btn details-btn" data-id="1904">Ver más detalles</button>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="respuestos" data-id="1904">
+                <div class="product-header">
+                    <img src="img/repuestos/texcladohp.jpg" alt="teclado 2">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">HP</p>
+                    <h3 class="product-name">TECLADO HP REPUESTO</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado para Laptop HP - repuesto.</p>
+                    <button class="buy-btn details-btn" data-id="1904">Ver más detalles</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="respuestos" data-id="1904">
+                <div class="product-header">
+                    <img src="img/repuestos/tecladolenovo.jpg" alt="teclado 3">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand">LENOVO</p>
+                    <h3 class="product-name">TECLADO LENOVO REPUESTO </h3>
+                    <p class="price"></p>
+                    <p class="product-description">Teclado para Laptop Lenovo - repuesto.</p>
+                    <button class="buy-btn details-btn" data-id="1904">Ver más detalles</button>
+                </div>
+            </div>
+
+            
+
+
+             <!-- IMPRESORA EPSON L375 -->
+             <div class="product-card" data-category="impresoras" data-id="1659">
+                <div class="product-header">
+                    <img src="img/accesorios/IMPRESORA EPSON L375.jfif" alt="IMPRESORA EPSON L375">
+                    <div class="discount-badge"></div>
+                </div>
+                <div class="product-body">
+                    <p class="store-info">Por tienda Infotec</p>
+                    <p class="brand"></p>
+                    <h3 class="product-name">IMPRESORA EPSON L375</h3>
+                    <p class="price"></p>
+                    <p class="product-description">Impresora multifuncional EPSON modelo L375 con tanque de tinta integrado.</p>
+                    <button class="buy-btn details-btn" data-id="1659">Ver más detalles</button>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- CONTROLES DE PAGINACIÓN - MEJORADO -->
+            <div class="pagination-section">
+                <div class="pagination-controls">
+                    <button id="prevPage" class="pagination-btn pagination-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div id="pageNumbers" class="page-numbers"></div>
+                    <button id="nextPage" class="pagination-btn pagination-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="pagination-info" id="paginationInfo"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Multiservicios Infotec</h4>
+                <p>Distribuidor oficial de productos electrónicos de calidad con garantía y servicio profesional.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <p><a href="productos.html" style="color: #ddd; text-decoration: none;">Catálogo de Productos</a></p>
+                <p><a href="index.html#contacto" style="color: #ddd; text-decoration: none;">Contacto</a></p>
+                <p><a href="#" style="color: #ddd; text-decoration: none;">Términos y Condiciones</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Dirección</h4>
+                <p>Av. Los mangos 1091, Villa Hermosa<br>Chiclayo</p>
+                <p>📞 +51 900 261 118</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Multiservicios Infotec. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/51900261118?text=Hola,%20necesito%20más%20información%20sobre%20sus%20productos" 
+       class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>
+
